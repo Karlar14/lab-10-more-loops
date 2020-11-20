@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function countdown(start){
+        console.log(start);
+        let nextNumber = start - 1 ;
+
+        if (nextNumber > 0){
+          countdown(nextNumber); //recursive function call themselves
+
+        }else{
+          console.log("Happy new YEar!"); //this is our base case
+        }
+      }
+      countdown(10);
+    </script>
+
+  </body>
+</html>
